@@ -1,0 +1,41 @@
+PROGRAM (Using javac and C compilers in UNIX)
+
+Use JNI (Java Native Interface) to create a program that allows a front-end Java user-interface to make function calls to C functions. Start by researching JNI on the web and trying out simple examples.
+Java Requirements:
+
+    Must have a user-interface function which requests the user to enter the maximum temperature (as an int).
+    If the maximum temperature entered is less than or equal to 0, the program must display an error message and prompt the user to re-enter the temperature.
+    Contains a print function which uses a while loop to generate a table starting from 0 F to the maximum temperature in increments of 5 F.
+    The table output must be formatted.
+    Make sure the program catches floats!
+
+C Requirements:
+
+    Contains a function called convertFtoC with the prototype shown below:
+        float convertFtoC(int);
+    Contains a function to round up the maximum temperature to the next multiple of 5 (For example 90 will remain 90, but 91 will become 95)
+
+A sample output of your program is shown below in italics. Columns for Centigrade must have two decimal places and must be right aligned.
+
+<Print a brief message to the user describing your program>
+
+Please enter a maximum temperature in Fahrenheit (F): 93
+Temperature in F 	Temperature in C
+0 	-17.77
+5 	...
+10 	...
+... 	...
+ 	 
+... up to the maximum temp (in this case 95)
+
+Hints:
+
+    The JDK installations on UH Unix are in: /usr/jdk/
+    The name of shared library files in Unix should start with lib.
+    You will need to tell the C compiler the path to the solaris folder in the include folder that contains the jni.h file that you are using in addition any other paths that you may need to use.
+
+Your submission must include the following:
+
+    Source code (e.g. Hw9.java and Hw9.c files and additional files that you write)
+    Do not submit object code, class file or generated header files.
+    Proof of compilation and two or three test cases.
