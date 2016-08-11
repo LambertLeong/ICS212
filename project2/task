@@ -1,0 +1,70 @@
+PROJECT 2: Address Book in C++ [25 points]
+
+Your program must include the following:
+
+// File: record.h
+
+Definition of record.h
+
+// File: llist.h
+
+class llist
+{
+  private:
+    record *    start;
+    char        filename[16];
+    int         readfile();
+    int         writefile();
+    record *    reverse(record * );
+    void        cleanup();
+
+  public:
+    llist();
+    llist(char[]);
+    ~llist();
+    int addRecord(int, char[], char[], int);
+    int printRecord(int);
+    int modifyRecord(int, char[]);
+    void printAll();
+    int deleteRecord(int);
+    void reverse();
+};
+
+// File: llist.cpp
+
+Contains the function definitions for all the class member functions, including the constructor and destructor. The constructor will initialize the class variables. The destructor will deallocate the entire linked list.
+Requirements:
+
+    You must define the two following constructor functions but you may use either in your main function
+        llist mylist;     // Instance of class llist
+        llist mylist( "proj2.txt" );
+    You cannot change the class definition without consent
+    You may create any other functions you like or add to the menu in the interface.
+    You cannot use any of the C I/O functions. Use the C++ versions instead.
+    No global variables may be used.
+    Name may have spaces and addresses may have multiple lines (use getline).
+    Use ifndef directives for the C++ header files
+    deleteRecord will delete all records, including duplicates based on account number.
+    addRecord will create a record even if it already exists with the same account number
+    modifyRecord will modify all records with the same account number
+    printRecord will print on the screen information for all records with the specified account number
+    printAll will print the entire address book on the screen
+    A make file must be used.
+
+New Requirements:
+
+    Implement the reverse method using recursion and add an option to the menu
+        This will reverse the list without printing it.
+    Overload the << operator so it replaces the calling of the printAll method in the user-interface. It should NOT call the printAll method.
+    Implement debug mode using preprocessor directives, instead of command line arguments.
+    Extra Credit: Implement a copy constructor and/or the overloaded assignment operator for the llist class.
+
+Your submission must include the following:
+
+    Source code (all files including the make file)
+    Proof of multiple file compilation with makefile
+    1-2 pages of sample test output
+    Test Report (not test plan) containing a summary of results
+        Requirements not met/not functional
+        Additional features/extra credit
+        Future enhancements and/or general comments
