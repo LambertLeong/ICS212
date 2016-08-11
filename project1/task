@@ -1,0 +1,63 @@
+Project 1: PROGRAM [25 points]
+
+This project combines concepts from Homeworks 3, 5 and 6.
+Assume the following struct definition and function prototypes:
+
+// File: record.h
+
+struct record
+{
+    int              accountno;
+    char             name[25];
+    char             address[80];
+    int              yearofbirth;
+    struct record*  next;
+
+}; // This semicolon is important!!!
+
+// Prototypes
+
+int addRecord (struct record **, int, char [ ],char [ ],int);
+int printRecord (struct record *, int);
+int modifyRecord (struct record *, int, char [ ]);
+void printAllRecords(struct record *);
+int deleteRecord(struct record **, int);
+int readfile(struct record **, char []);
+void writefile(struct record *, char []);
+
+// Define as a local variable within the main function:
+struct record *start = NULL;
+Requirements:
+
+    addRecord will create a record even if one already exists with the same accountno
+    addRecord must add the record to the list so that it is sorted by accountno
+    modifyRecord will modify all records with the matching accountno
+    printRecord will print all records with the matching accountno
+    printAll will print the contents of the entire database
+    deleteRecord will delete all records, including duplicates based on the accountno.
+    There must be a minimum of two files, one for the user-interface functions and one file for the database functions.
+    A make file must be used.
+    A global variable debugmode must be defined. No other global variables may be used.
+    You program must use command-line arguments for debugging.
+    This program may be invoked by typing the executable name(for example, hw3) or with the option "debug". (e.g. hw3 debug). Anything else such as "hw3 debug test" or "hw3 test" should give an error. The format of the error must be similar to the one you get when you type "cp" in UNIX.
+    When the program is called using the debug option, additional output will be printed on the screen such as name of function called and parameters passed. This is in addition to everything the program does when called without the debug argument. (You may ignore the printing of pointer arguments)
+    Every function definition, including the stubs must have a single line of output identifying the function called and the parameters passed, when the "debug" option is invoked.
+    You must use a while or do-while loop for the menu.
+    For each menu option, collect the appropriate information from the user.
+    Name arrays must allow spaces
+    Address arrays should be capable of storing multiple-line addresses
+    Write your own getfield function to obtain the address information since the address field may have multiple lines of address and must be stored as one character array. You cannot ask the user how many lines of address they are typing.
+    Prototype for the above function is void getfield (char [ ], int);
+    You cannot change the definition of the record datatype
+    You cannot change the arguments used by the functions shown above.
+    You cannot create any additional database functions without my consent.
+    You may create any other functions you like or add to the menu in the interface.
+    Readfile should be called once at the start of the main function
+    Writefile should be called once at the end of the main function
+
+Your submission must include the following:
+
+    Source code (all files including the make file )
+    Proof of multiple file compilation with makefile
+    1-2 pages of sample test output (just a small sample to show the program actually runs)
+    Test Plan used for testing and complete summary of results
