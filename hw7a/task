@@ -1,0 +1,73 @@
+Homework 7A
+
+Review this PDF description of the TCP header format. Eveything you need to know about TCP to complete this assignment is in this document. If you decide to Google information on TCP, do not apply what you read online to this exercise.
+
+Download these three TCP header binary files.
+
+    test1.bin                      (download test1.bin.txt)
+    test2.bin                      (download test2.bin.txt)
+    test3.bin                      (download test3.bin.txt)
+
+Write a program that will do the following:
+
+    Read the binary file into an unsigned char array and print the header.
+    Create a response header and write it to a new file.
+    Read the response binary file and print the header
+
+Note: By binary file we mean the .bin files, NOT the .bin.txt files (i.e. your program should read / write .bin files, not .bin.txt files). Those are provided for your own convenience so that you can see the contents of the .bin files in hex if you cannot find a hex editor (we still strongly recommend that you do try to read the .bin files with a hex editor if possible). You will receive 0 points if your program reads / writes .bin.txt files. Note that the "|" in the .bin.txt files are only there to separate each set of 4 bytes (i.e. each line in the TCP header diagram). They do not exist in the actual binary file.
+Requirements:
+
+    The response file will switch the source and destination ports
+    The sequence number must be incremented by 1 for the response
+    The acknowledgment number of the response must be sequence number of the request
+    If the SYN flag is set in the request, both the SYN and ACK flags must be set in the response
+    If something is wrong with a part of the header, fix it when creating the response.
+    You must have the following functions:
+    int printheader();
+    int readfile(char []);    // Tip: Use the fread() function
+    int writefile(char []);    // Tip: Use the fwrite() function
+    You may use a global structure to share among the various functions.
+    When the header is printed, all values must be printed in decimal except flags and checksum. Checksum must be printed in hex and all of the flags that are set must be printed (e.g. Flags: ACK FIN)
+
+Submit the following:
+
+    Proof of compilation
+    Source code
+    Output for each of the provided binary files (test1.bin, test2.bin, and test3.bin)
+    Read it in and print the headers
+    Write the response to a files
+    Read the response and print the headers
+
+_________________________________________________________________________________________________________________________________________
+
+
+TCP Header Format
+
+Source Port: 16 bits
+    The source port number.
+Destination Port: 16 bits
+    The destination port number.
+Sequence Number:
+ 32 bits
+Acknowledgment Number: 32 bits
+Data Offset: 4 bits
+    The number of 32 bit words in the TCP Header.
+Reserved: 6 bits
+    Reserved for future use.  Must be zero.
+Control Bits: 6 bits (from left to right):
+    URG:  Urgent Pointer field significa
+nt
+    ACK:  Acknowledgment field significant
+    PSH:  Push Function
+    RST:  Reset the connection
+    SYN:  Synchronize sequence numbers
+    FIN:  No more data from sender
+Window: 16 bits
+    Must be zero.
+Checksum: 16 bits
+    Must be
+ffff
+.
+Urgent Poin
+ter: 16 bits
+    Must be zero.
