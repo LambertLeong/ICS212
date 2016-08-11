@@ -1,0 +1,37 @@
+Temperature conversion program in C++ [5 pts]
+Requirements:
+
+Redo the programming assignment from Homework 1 in C++ on UHUNIX. Replace all C input/output statements with C++ statements (cin, cout, cin.getline) to get the same formatted output as Homework 1.
+
+    Do not use the header file stdio.h, use iostream
+    Must contain a function called convertFtoC with the following prototype:
+        void convertFtoC( int, float &);
+
+Your submission must include the following:
+
+    Source Code
+    Proof of compilation
+    Output with ONE test case.
+
+Here is the description of Homework 1 for your reference:
+
+    Contains a user-interface function which requests the user to enter the maximum temperature as an int.
+    If the maximum temperature entered is not an integer, the program must display an error message and prompt the user to re-enter the temperature.
+    If the maximum temperature entered is less than or equal to 0, the program must display an error message and prompt the user to re-enter the temperature.
+    Contains a function to round up the maximum temperature to the next multiple of 5 (For example 90 will remain 90, but 91 will become 95)
+    Contains a print function which uses a while loop to generate a table starting from 0 F to the maximum temperature in increments of 5 F
+    Contains a function called convertFtoC with the following prototype:
+        float convertFtoC(int);   // Uses the formula: C = (F - 32) * (5 / 9)
+    The table output must be formatted.
+    A sample output of your program is shown below. Columns for Celsius must have two decimal places and must be right aligned.
+
+<Print a brief message to the user describing your program>
+
+Please enter a maximum temperature in Fahrenheit (F): 93
+Temperature in F 	Temperature in C
+0 	-17.77
+5 	...
+10 	...
+... 	...
+ 	 
+... up to the maximum temp (in this case 95)
