@@ -1,0 +1,26 @@
+Exercise 1: TEST PLAN [5 pts]
+
+Write a test plan consisting of a series of tests and desired outcomes to completely test Project 1 based on the specifications provided in Homework 3. You will need around 30 to 40 tests to go through all the requirements.
+Example:
+Test 1: 	Start the program by typing the program name with no arguments.
+	e.g. ./project1
+Outcome: 	Menu is displayed
+ 	 
+Test 2: 	Select the Print option
+Outcome: 	Displays a message that List is empty
+ 	 
+Test 3: 	Select the Add Option and add the following information:
+ 	John Smith
+ 	1111 Dole St.,
+ 	Honolulu, HI 96822
+ 	4083334444
+ 	1980
+Outcome: 	Record gets added and confirmation is displayed to the user.
+Exercise 2: ALGORITHMS [5 pts]
+Submit the following:
+
+    Revised algorithm for the addrecord and deleterecord.
+    Below or next to each line in the algorithm, write the corresponding C code.
+    Traces that verify the algorithm for the following test cases:
+        Adding a duplicate record to the start of the list
+        Beginning with a list that consists entirely of two duplicate records, delete all duplicates so you end with an empty list.
