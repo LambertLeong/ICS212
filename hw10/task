@@ -1,0 +1,36 @@
+Programming class hierarchy
+
+Create a simple program which uses the following class hierarchy:
+
+animal
+  protected:   char sound[10];              // contains "moo", "quack"
+               unsigned char data;          // 0 - cannot fly, 1 - can fly
+                                            // number of legs - 3 bits
+
+  public:      virtual void displaydata(); // prints the value of sound and fly
+
+cow: derived from animal
+  public:       void displaydata(); // prints the value of sound, number of legs and fly
+
+bird: derived from animal
+  public:       void displaydata(); // prints the value of sound and fly
+Requirements:
+
+    Each class must have its own .cpp and .h file, including constructors and destructors.
+    Use bit-wise operators to both set and retrieve fly and number of legs
+    Write a main function which creates instances of the animal, cow and bird class.
+    Use the vector and map classes in the main function.
+        Need to show that you are able to create them, fill them with values, and retrieve the stored values.
+        If you want, you can fill them up with pointers to animals and use them to test polymorphism. 
+    Initialize the instances and call the animaldisplaydata function to test polymorphism on the displaydata function of the bird and cow class.
+
+    void animaldisplaydata(animal * a)
+    {
+      // Your code goes here...
+    }
+
+Your submission must include the following:
+
+    Source Code
+    Proof of compilation
+    Output showing that your program works as expected
