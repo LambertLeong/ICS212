@@ -1,0 +1,27 @@
+Program 2b [5 pts]
+Requirements:
+
+    Write a function, halfstring, which copies the second half of a string and returns it in the second string argument.
+    The function prototype must be: void halfstring(char [ ], char [ ]);
+    Do not use ANY system-defined string functions (i.e. those found in the string.h library including strlen, strcat, strcpy, etc.).
+
+Your submission must include the following:
+
+    Source code which includes a driver in a separate file
+    Makefile
+    Proof of compilation using your makefile
+    Three test cases
+
+Program 2c [5 pts]
+Requirements:
+
+    Write a main function that uses at least 5 different string functions from the library (e.g strlen, strncpy, etc).
+    This is a creative exercise. You can make up any combination of functions based on a user-input string.
+
+Your submission must include the following:
+
+    Source code which includes a driver in a separate file
+    Makefile
+    Proof of compilation using your makefile
+    One test case with output
+
