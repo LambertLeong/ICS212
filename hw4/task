@@ -1,0 +1,48 @@
+Homework 4:
+
+This homework must be submitted by the due date. Late points cannot be used for this homework.
+
+Assume the following variables are already defined, initialized and available for you to use:
+
+    start: pointer to the start of the list (or NULL)
+    uaccountno: The user's account number
+    uname: The address of the array containing the user's name
+    uaddr: The address of the array containing the user's address
+    uyob: The user's year of birth
+
+Assume the following struct definition:
+
+    struct record
+    {
+        int               accountno;
+        char              name[25];
+        char              address[80];
+        int               yearofbirth;
+        struct record*    next;
+    };
+
+Requirements:
+Write the pseudocode for the following two functions:
+
+    deleteRecord: Must delete ALL records (including duplicates) based on the account number
+    addRecord: Must add a record to the singly linked list so the list is in ascending order based on accountno
+
+    There must be no use of any C code in the algorithm
+    You may only use the allowed vocabulary from the list below with variations to accommodate different memory locations
+
+Vocabulary list:
+
+    Define a <pointer to record> called <temp>
+    Allocate space for a new record on the heap and store its address in the <next field of the record whose address is in temp>
+    Delete the record whose address is in <temp>
+    <while or if> (the <next field of the record whose address is in start> is not <NULL>)
+    Copy from the <name field of the record whose address is in temp> into the <name field of the record whose address is in temp2>
+
+Your submission should include the following:
+
+    pseudocode for the addRecord and deleteRecord functions from Homework 3 using a single linked list for the database.
+    Traces that verify the algorithm for the following test cases:
+        Add record to empty list
+        Add record to the end of the list with 2 records
+        Delete account number that matches first record from list with 3 records
+        Delete account number that matches second record from list with 3 records
