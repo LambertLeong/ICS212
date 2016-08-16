@@ -1,0 +1,15 @@
+Pseudocode [5 pts]
+Requirements:
+
+    Assume there is an integer array called numbers of size n (where n > 1) and the entire array is populated with integers.
+    Assume the user enters an integer that is stored in a variable called num.
+    Write pseudocode that will delete all instances of num from the numbers array (be sure to remove any empty spaces).
+    Use only the following vocabulary:
+        Define a <datatype> called <var name>
+        while (Boolean expression)
+        if (boolean expression)
+        copy from <expression> to <var name>
+
+Your submission must include the following:
+
+    Pseudocode
