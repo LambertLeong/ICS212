@@ -1,0 +1,40 @@
+PROGRAM (Must be done using the C compiler on UHUNIX) [8 pts]
+
+Write two functions which read and write an array of records to and from a file. Use a driver to test the two functions. The driver code and the test output must show clearly that the file input and output work.
+Requirements:
+
+    File: account.h which contains:
+
+    struct account
+    {
+        int          accountno;
+        char         name[25];
+        char         address[80];
+        int          yearofbirth;
+    };
+
+
+    File: iofunctions.c:
+        Must implement these functions:
+        void readfile( struct account accounts[ ], int * numAccounts, char filename[ ] );
+        void writefile( struct account accounts[ ], int numAccounts, char filename[ ] );
+        Since the address field can contain multiple new line characters, we'll use the '!' symbol to indicate the end of that field.
+
+    File: main.c
+        Must have the following local variables:
+        struct account accounts[5];
+        int numAccounts;
+        Upon execution, must read in the contents of the input file then allow the user to enter x number of additional accounts (you will likely use a loop to get the information for each account). You may prompt the user for the value of x.
+        Upon termination, must write the contents of the accounts array to the output file. The output file must be formatted such that it can subsequently be read in using your readfile function.
+
+    Testing:
+    Use these files to test your functions:
+        input file one
+        input file two
+
+Your submission must include the following:
+
+    Source code: account.h, iofunctions.c, and main.c
+    Make file
+    Proof of compilation
+    Output with testing
