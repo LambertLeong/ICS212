@@ -1,0 +1,64 @@
+Exercise 1: Temperature conversion program [5 pts]
+Requirements:
+
+    Contains a user-interface function which requests the user to enter the maximum temperature as an int.
+    If the maximum temperature entered is not an integer, the program must display an error message and prompt the user to re-enter the temperature.
+    If the maximum temperature entered is less than or equal to 0, the program must display an error message and prompt the user to re-enter the temperature.
+    Contains a function to round up the maximum temperature to the next multiple of 5 (For example 90 will remain 90, but 91 will become 95)
+    Contains a print function which uses a while loop to generate a table starting from 0 F to the maximum temperature in increments of 5 F
+    Contains a function called convertFtoC with the following prototype:
+        float convertFtoC(int);   // Uses the formula: C = (F - 32) * (5 / 9)
+    The table output must be formatted.
+    A sample output of your program is shown below. Columns for Celsius must have two decimal places and must be right aligned.
+
+<Print a brief message to the user describing your program>
+
+Please enter a maximum temperature in Fahrenheit (F): 93
+Temperature in F 	Temperature in C
+0 	-17.77
+5 	...
+10 	...
+... 	...
+ 	 
+... up to the maximum temp (in this case 95)
+
+You must compile your code using the cc compiler with the -c and -o flags on UHUNIX.
+
+Your submission must include the following:
+
+    Source Code
+    Proof of compilation
+    Output with three test cases.
+
+Exercise 2: Tracing on UHUNIX [5 pts]
+
+Run the C program below and complete a tracing table showing all 13 variables. You may add printf() statements to obtain the addresses and values of these variables (count the array as 3 variables/values and also include argc and argv in the table).
+
+This program must be executed on UHUNIX.
+
+void dummy(int, char, char *, float);
+
+int main(int argc, char* argv[])
+{
+    int num1, num2 = 13;
+    char c = 'H';
+    float score1 = 12.5;
+    char ca[3] = "Hi";
+
+    dummy(num2, c, ca, score1);
+
+    return 0;
+}
+
+void dummy(int x, char y, char * z, float w)
+{
+    x++;
+    y++;
+    w = w + 2.3;
+}
+Your submission must include the following:
+
+    A table showing the Address, Name, Datatype, Scope, and Value of each variable on the stack.
+    Explain what you find.
+    Hint: use the sizeof function to double check your addresses.
+    Do not submit your source code or output.
