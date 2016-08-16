@@ -1,0 +1,51 @@
+HOMEWORK 3b [14 pt]:
+
+Write a user-interface which allows the user a menu of choices for a bank database application. The database contains the accountnumber (int), name (char [ ]), yearofbirth(int) and address(char [ ]) fields for each person.
+Requirements
+
+    Assume that the information is stored in a database which is a black box and can only be accessed by the functions, addRecord, modifyRecord, printRecord and deleteRecord, which have the following prototypes:
+
+    int addRecord (struct record **, int, char [ ],char [ ],int);
+    int printRecord (struct record *, int);
+    int modifyRecord (struct record *, int, char [ ]); // This should modify the address field
+    void printAllRecords(struct record *);
+    int deleteRecord(struct record **, int);
+    Do not implement or complete the above functions
+    The following menu choices must be available:
+
+    Add a new record in the database
+    Modify a record in the database using the accountno as the key
+    Print information about a record using the accountno as the key
+    Print all information in the database
+    Delete an existing record from the database using the accountno as a key
+    Quit the program
+    You must use a while or do-while loop for the menu.
+    For each menu option, collect the appropriate information from the user.
+    Write your own getfield function to obtain the address information since the address field may have multiple lines of address and must be stored as one character array. You cannot ask the user how many lines of address they are typing.
+    Prototype for the above function is void getfield (char [ ], int);
+    The name entered by the user may have spaces.
+    You program must use command-line arguments for debugging.
+    This program may be invoked by typing the executable name(for example, hw3) or with the option "debug". (e.g. hw3 debug). Anything else such as "hw3 debug test" or "hw3 test" should give an error. The format of the error must be similar to the one you get when you type "cp" in UNIX.
+    When the program is called using the debug option, additional output will be printed on the screen such as name of function called and parameters passed. This is in addition to everything the program does when called without the debug argument. (You may ignore the printing of pointer arguments)
+    Every function definition, including the stubs must have a single line of output identifying the function called and the parameters passed, when the "debug" option is invoked.
+    A global variable, debugmode must be used to keep track of how the program was invoked.
+    Stubs for the above five functions must be defined in a separate file.
+    All stubs must be in one source file and the user-interface functions in one or more files.
+    DO NOT DEFINE a structure or array to hold the entire database, but using the following structure as a separate, record.h file
+
+    struct record
+    {
+        int                accountno;
+        char               name[25];
+        char               address[80];
+        int                yearofbirth;
+        struct record*     next;
+    };
+    Define struct record * start = NULL, and pass start to each database function.
+
+Submit
+
+    Source code
+    Make file
+    Proof of compilation using a make file
+    Output
