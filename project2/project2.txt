@@ -1,0 +1,527 @@
+Script started on Sat Jul 30 20:33:48 2016
+uhx01% cat input.txt
+2
+Holly Day
+1000 School St.
+Honolulu, HI 96823!
+1990
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA!
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824!
+1975
+4
+aera
+aegaegega gagaeg
+aegaegaeg aa
+gagaga!
+1999
+2
+Holly Day2
+1000 School St.
+Honolulu, HI 96823!
+1990
+uhx01% make
+g++ -c getfield.cpp
+g++ -c project2main.cpp
+g++ -c myinputfunctions.cpp
+g++ -c llist.cpp       
+g++ getfield.o project2main.o myinputfunctions.o llist.o -o out
+uhx01% ./out
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+4
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+2
+Holly Day2
+1000 School St.
+Honolulu, HI 96823
+1990
+2
+Holly Day
+1000 School St.
+Honolulu, HI 96823
+1990
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+4
+aera
+aegaegega gagaeg
+aegaegaeg aa
+gagaga
+1999
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+-1
+ERROR!  Enter an integer betweeen 1 and 7
+a
+ERROR!  Enter an integer betweeen 1 and 7
+as12
+ERROR!  Enter an integer betweeen 1 and 7
+1999999
+ERROR!  Enter an integer betweeen 1 and 7
+1
+Enter account #
+adsf
+Error: Please enter a non-Negative integer, >0 
+-12313
+Error: Please enter a non-Negative integer, >0 
+abc123
+Error: Please enter a non-Negative integer, >0 
+5
+Enter the name on the account
+Lam Bert18
+Enter address
+@thegr8lambino
+@th3gr8lambino
+
+Enter year of birth (eg. 1990)
+1992
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+4
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+2
+Holly Day2
+1000 School St.
+Honolulu, HI 96823
+1990
+2
+Holly Day
+1000 School St.
+Honolulu, HI 96823
+1990
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+4
+aera
+aegaegega gagaeg
+aegaegaeg aa
+gagaga
+1999
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+2
+Enter account #
+4
+Modify Record
+Enter new address for the account
+this new
+address
+will test the 
+string input limit
+adfafaoifaonfaonefaonfieeeeeeeeeeeeeeeeeeiiiiiiiiiiiiiiiiiiiiiiiiiiiiieeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Note! Number of characters exceeded.
+Only the first 78 char were taken
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+3
+Enter account #
+4
+Printing records matching account number
+account number:
+4
+name:
+aera
+adress:
+this new
+address
+will test the 
+string input limit
+adfafaoifaonfaonefaonfiee
+birth day:
+1999
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+6
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+4
+Printing all records
+
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+4
+aera
+this new
+address
+will test the 
+string input limit
+adfafaoifaonfaonefaonfiee
+1999
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+2
+Holly Day
+1000 School St.
+Honolulu, HI 96823
+1990
+2
+Holly Day2
+1000 School St.
+Honolulu, HI 96823
+1990
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+6
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+4
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+2
+Holly Day2
+1000 School St.
+Honolulu, HI 96823
+1990
+2
+Holly Day
+1000 School St.
+Honolulu, HI 96823
+1990
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+4
+aera
+this new
+address
+will test the 
+string input limit
+adfafaoifaonfaonefaonfiee
+1999
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+5
+Enter account #
+4
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+5
+Enter account #
+4
+Record not in database 
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+5
+Enter account #
+2
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+7
+uhx01% make clean
+rm *.o out
+uhx01% make debug
+g++ -Ddebug -c getfield.cpp project2main.cpp myinputfunctions.cpp llist.cpp
+g++  getfield.o project2main.o myinputfunctions.o llist.o -o out
+uhx01% ./out
+
+********DEBUG MODE********
+DEBUG: calling function readFile
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 1
+name is Barb E. Dahl
+address is 1415 Campus Rd.
+Honolulu, HI 96824
+USA
+birth year is 1980
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 3
+name is Anita Knapp
+address is 12 University Ave.
+Honolulu, HI 96824
+birth year is 1975
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 5
+name is Lam Bert18
+address is @thegr8lambino
+@th3gr8lambino
+birth year is 1992
+***************************
+
+
+********DEBUG MODE********
+Called: 
+Menuui()
+***************************
+
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+4
+
+********DEBUG MODE********
+Function called: Overloaded '<<' Operator
+***************************
+
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Quit            |
+----------------------------
+7
+
+********DEBUG MODE********
+DEBUG: calling function writefile
+***************************
+
+
+********DEBUG MODE********
+Function called: cleanup
+***************************
+
+uhx01% cat input.txt
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA!
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824!
+1975
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino!
+1992
+uhx01% exit
+uhx01% 
+script done on Sat Jul 30 20:37:44 2016

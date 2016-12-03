@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int checkint()
+{
+    int count = 0;
+    int maxtemp;
+    char c;
+    do
+    {
+        printf("\nEnter an INTEGER value greater than zero: ");
+
+    } while (((scanf("%d%c", &maxtemp, &c)!=2 || c!='\n') && charcheck()) || 
+	maxtemp<0);
+	
+	return maxtemp;
+}
+int charcheck()
+{
+    while (getchar()!='\n');
+    return 1;
+}
+
+int round(int input)
+{
+	if(input %5==0)
+	return input;
+	return (5 - input % 5) + input;
+}
+float convertFtoC(int max)
+{
+	float cel;
+	float maxf=max;
+	cel = 5*(maxf-32)/9;
+	/*printf("%d\n",max);
+	printf("inside function \n");
+	printf("%f\n", cel);*/
+	return  cel;
+}
+
+void printtable(int max)
+{
+	float cel;
+	int fah;
+	int cap = max;
+	int start = 0;
+	printf("\nTemperature in F\t  \t Temperature in C\n");
+	
+	fah=start;
+	while(fah<=cap){
+		cel=convertFtoC(fah);
+		printf("%d\t\t\t\t%f\n",fah,cel);
+		fah = fah+5;
+	}
+}
+
+main(){
+	
+	int maxtemp;
+        int roundmax;
+        float celstemp;
+	printf("This program will convert tempurature in Fahrenheit to Celsius starting from 0(F), incremening by 5 degrees(F) up to a value selected by the user \n");
+	
+	maxtemp=checkint();
+	/*printf("value saved in maxtemp is \n");
+	printf("%d\n",maxtemp);*/
+
+	roundmax = round(maxtemp);
+	/*printf("rounded value is now \n");
+	printf("%d\n",roundmax);*/
+
+	celstemp = convertFtoC(roundmax);
+	/*printf("converted to \n"); 
+	printf("%f\n",celstemp);*/
+	
+	printtable(roundmax);
+	printf("valuse shown up until %d(F)\n",roundmax);
+}
+	

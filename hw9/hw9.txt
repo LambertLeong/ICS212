@@ -1,0 +1,50 @@
+Script started on Sun Aug 07 21:21:38 2016
+uhx01%         javac hw9.java
+uhx01%         javah -jni hw9
+uhx01%         gcc -shared -fpic -o libhw9.so -I/usr/jdk/jdk1.7.0_51/include -I/usr/j2se/include/solaris hw9.c
+uhx01%         java -Djava.library.path=. hw9
+
+Please Enter an integer value greater than zero
+abc
+Error!
+Enter an Integer!
+-123
+Error!
+Enter a number GREATER than ZERO
+.123
+Error!
+Enter an Integer!
+abc123
+Error!
+Enter an Integer!
+111
+You've Entered 111
+
+Tempurature in F                Tempurature in C
+        0                               -17.78
+        5                               -15.00
+        10                              -12.22
+        15                              -9.44
+        20                              -6.67
+        25                              -3.89
+        30                              -1.11
+        35                              1.67
+        40                              4.44
+        45                              7.22
+        50                              10.00
+        55                              12.78
+        60                              15.56
+        65                              18.33
+        70                              21.11
+        75                              23.89
+        80                              26.67
+        85                              29.44
+        90                              32.22
+        95                              35.00
+        100                             37.78
+        105                             40.56
+        110                             43.33
+        115                             46.11
+uhx01% exigt  t
+uhx01% 
+script done on Sun Aug 07 21:23:19 2016

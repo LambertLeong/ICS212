@@ -1,0 +1,35 @@
+
+    Define a <datatype> called <var name>
+    while (Boolean expression)
+    if (boolean expression)
+    copy from <expression> to <var name>
+
+    Define <int []> called <numbers>
+    copy <input array values> to <numbers>
+    
+    Define <int> called <num>
+    copy <input value for number to delete> to <num>
+    
+    Define <int> called <size>
+    copy <size of array> to <size>
+    
+    Define <int> called <start>
+    copy <value 0> to <start>
+
+    Define <int> called <move>
+    
+    while(start < size-1)
+    {
+        if(number[start]==num)
+        {
+            copy <start - 1> to <move>
+            
+            while(move < size - 3)
+            {
+                copy <number[move+2]> to <number[move+1]>
+                increment <move> by 1
+            }
+            decrement <size> by 1
+        }
+        increment <start> by 1
+    }

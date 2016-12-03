@@ -1,0 +1,20 @@
+Script started on Tue Jun 14 20:52:53 2016
+uhx01% make
+gcc -c main2c.c
+main2c.c:38:2: warning: no newline at end of file
+gcc -c username.c
+gcc main2c.o username.o -o out
+uhx01% ./out
+test 1, same first and last name
+firstname2 = samething, lastname2 = samething
+Suggested username based off of first and last names
+Your suggested username is samething01
+
+test 2, different first and last name
+firstname3 = Bruce, lastname3 = Wayne
+Suggested username based off of first and last names
+Your suggested username is BrWayne
+
+uhx01% exit
+uhx01% 
+script done on Tue Jun 14 20:53:04 2016

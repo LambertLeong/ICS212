@@ -1,0 +1,64 @@
+Script started on Sat Jul 23 11:08:40 2016
+uhx01% make
+g++ -c temp.cpp
+g++ temp.o -o out
+uhx01% ./out
+*****************************************************
+This program will convert tempurature in Fahrenheit to Celsius
+starting from 0(F) incremening by 5 degrees(F)
+up to a value selected by the user
+
+Please enter an integer value greater than zero: characters
+Invalid!
+Please enter an INTEGER value
+-100
+Invalid!
+Please enter an INTEGER value GREATER than ZERO
+200
+
+Temperature in F                 Temperature in C
+             0                            -17.78
+             5                            -15.00
+             10                            -12.22
+             15                            -9.44
+             20                            -6.67
+             25                            -3.89
+             30                            -1.11
+             35                            1.67
+             40                            4.44
+             45                            7.22
+             50                            10.00
+             55                            12.78
+             60                            15.56
+             65                            18.33
+             70                            21.11
+             75                            23.89
+             80                            26.67
+             85                            29.44
+             90                            32.22
+             95                            35.00
+             100                            37.78
+             105                            40.56
+             110                            43.33
+             115                            46.11
+             120                            48.89
+             125                            51.67
+             130                            54.44
+             135                            57.22
+             140                            60.00
+             145                            62.78
+             150                            65.56
+             155                            68.33
+             160                            71.11
+             165                            73.89
+             170                            76.67
+             175                            79.44
+             180                            82.22
+             185                            85.00
+             190                            87.78
+             195                            90.56
+             200                            93.33
+values shown up to 200 degrees (F)
+uhx01% exit
+uhx01% 
+script done on Sat Jul 23 11:09:09 2016

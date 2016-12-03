@@ -1,0 +1,49 @@
+Script started on Tue May 31 23:19:22 2016
+uhx01% cc -c temp.c
+uhx01% cc -o temp    a.out the  emp.c
+uhx01% ./a.out
+This program will convert tempurature in Fahrenheit to Celsius starting from 0(F), incremening by 5 degrees(F) up to a value selected by the user 
+
+Enter an INTEGER value greater than zero: aesfa
+
+Enter an INTEGER value greater than zero: 03234     adfa0393
+
+Enter an INTEGER value greater than zero: 0303aa
+
+Enter an INTEGER value greater than zero: -1232
+
+Enter an INTEGER value greater than zero: 123  .93913
+
+Enter an INTEGER value greater than zero: 123
+
+Temperature in F                 Temperature in C
+0                               -17.777779
+5                               -15.000000
+10                              -12.222222
+15                              -9.444445
+20                              -6.666667
+25                              -3.888889
+30                              -1.111111
+35                              1.666667
+40                              4.444445
+45                              7.222222
+50                              10.000000
+55                              12.777778
+60                              15.555555
+65                              18.333334
+70                              21.111111
+75                              23.888889
+80                              26.666666
+85                              29.444445
+90                              32.222221
+95                              35.000000
+100                             37.777779
+105                             40.555557
+110                             43.333332
+115                             46.111111
+120                             48.888889
+125                             51.666668
+valuse shown up until 125(F)
+uhx01% exit
+uhx01% 
+script done on Tue May 31 23:20:36 2016

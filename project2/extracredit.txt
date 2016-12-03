@@ -1,0 +1,433 @@
+Script started on Mon Aug 01 22:13:42 2016
+uhx01% make clean
+rm *.o out
+uhx01% make
+g++ -c getfield.cpp
+g++ -c project2main.cpp
+g++ -c myinputfunctions.cpp
+g++ -c llist.cpp    
+g++ getfield.o project2main.o myinputfunctions.o llist.o -o out
+uhx01% make clean
+rm *.o out
+uhx01% make debug
+g++ -Ddebug -c getfield.cpp project2main.cpp myinputfunctions.cpp llist.cpp
+g++  getfield.o project2main.o myinputfunctions.o llist.o -o out    
+uhx01% ./out
+
+********DEBUG MODE********
+Function called: Default Constructor 
+***************************
+
+
+********DEBUG MODE********
+DEBUG: calling function readFile
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 1
+name is Barb E. Dahl
+address is 1415 Campus Rd.
+Honolulu, HI 96824
+USA
+birth year is 1980
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 3
+name is Anita Knapp
+address is 12 University Ave.
+Honolulu, HI 96824
+birth year is 1975
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 5
+name is Lam Bert18
+address is @thegr8lambino
+@th3gr8lambino
+birth year is 1992
+***************************
+
+
+********DEBUG MODE********
+Function called: Copy Constructor 
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 1
+name is Barb E. Dahl
+address is 1415 Campus Rd.
+Honolulu, HI 96824
+USA
+birth year is 1980
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 3
+name is Anita Knapp
+address is 12 University Ave.
+Honolulu, HI 96824
+birth year is 1975
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 5
+name is Lam Bert18
+address is @thegr8lambino
+@th3gr8lambino
+birth year is 1992
+***************************
+
+
+********DEBUG MODE********
+Called: 
+Menuui()
+***************************
+
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Check original  |
+ from copy constructor     |
+Enter 8 to Quit            |
+----------------------------
+4
+
+********DEBUG MODE********
+Function called: Overloaded '<<' Operator
+***************************
+
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Check original  |
+ from copy constructor     |
+Enter 8 to Quit            |
+----------------------------
+7
+
+********DEBUG MODE********
+Function called: Overloaded '<<' Operator
+***************************
+
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Check original  |
+ from copy constructor     |
+Enter 8 to Quit            |
+----------------------------
+1
+Enter account #
+9
+
+********DEBUG MODE********
+Function called: inputaccountnum
+Parameters passed:
+void
+***************************
+
+Enter the name on the account
+
+********DEBUG MODE********
+Function called: readbychar
+Parameters passed:
+name[] location is 0xffbffb94
+cap is 23
+***************************
+
+this account wong t
+Enter address
+
+********DEBUG MODE********
+Function called: getfield
+Parameters passed:
+address[ ] location is 0xffbffb94
+cap is 77
+***************************
+
+be in the normale  print because
+it is i       asdfaefaefa
+
+
+********DEBUG MODE********
+Function called: inputbirth
+Parameters passed:
+void
+***************************
+
+Enter year of birth (eg. 1990)
+2000
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+account number is 9
+name is this account wont
+address is be in the normal print because
+asdfaefaefa
+birth year is 2000
+***************************
+
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Check original  |
+ from copy constructor     |
+Enter 8 to Quit            |
+----------------------------
+4
+
+********DEBUG MODE********
+Function called: Overloaded '<<' Operator
+***************************
+
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+9
+this account wont
+be in the normal print because
+asdfaefaefa
+2000
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Check original  |
+ from copy constructor     |
+Enter 8 to Quit            |
+----------------------------
+7
+
+********DEBUG MODE********
+Function called: Overloaded '<<' Operator
+***************************
+
+Printing all records
+
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino
+1992
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to reverse list    |
+Enter 7 to Check original  |
+ from copy constructor     |
+Enter 8 to Quit            |
+----------------------------
+8
+
+********DEBUG MODE********
+Function called: Destructor 
+***************************
+
+
+********DEBUG MODE********
+DEBUG: calling function writefile
+***************************
+
+
+********DEBUG MODE********
+Function called: cleanup
+***************************
+
+
+********DEBUG MODE********
+Function called: Destructor 
+***************************
+
+
+********DEBUG MODE********
+DEBUG: calling function writefile
+***************************
+
+
+********DEBUG MODE********
+Function called: cleanup
+***************************
+
+uhx01% cat input.txt
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA!
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824!
+1975
+5
+Lam Bert18
+@thegr8lambino
+@th3gr8lambino!
+1992
+9
+this account wont
+be in the normal print because
+asdfaefaefa!
+2000
+uhx01% exit
+uhx01% 
+script done on Mon Aug 01 22:15:35 2016

@@ -1,0 +1,699 @@
+Script started on Sun Jul 10 20:47:11 2016
+uhx01% make
+gcc -c project1ui.c
+gcc -c getfield.c
+gcc -c functions.c
+gcc -c project1main.c
+gcc -c readbychar.c
+gcc -c myinputfunctions.c
+gcc -c iofunctions.c    
+gcc project1ui.o getfield.o functions.o project1main.o readbychar.o myinputfunctions.o  iofunctions.o -o out
+uhx01% ./out debugmode
+ERROR: command ./out not found
+ERROR: command debugmode not found
+uhx01% ./out debug
+
+********DEBUG MODE********
+Entered debug Mode
+***************************
+
+
+********DEBUG MODE********
+DEBUG: calling function readFile
+parameters passed
+struct record is ffbffc54
+filename is in fake.txt
+***************************
+
+File does not exists to read
+
+********DEBUG MODE********
+DEBUG: calling function readFile
+parameters passed
+struct record is ffbffc54
+filename is in input.txt
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+struct record is ffbffb24
+account number is 2
+name is Holly Day
+address is 1000 School St.
+Honolulu, HI 96823
+birth year is 1990
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+struct record is ffbffb24
+account number is 1
+name is Barb E. Dahl
+address is 1415 Campus Rd.
+Honolulu, HI 96824
+USA
+birth year is 1980
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+struct record is ffbffb24
+account number is 3
+name is Anita Knapp
+address is 12 University Ave.
+Honolulu, HI 96824
+birth year is 1975
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+struct record is ffbffb24
+account number is 4
+name is aera
+address is aegaegega gagaeg
+aegaegaeg aa
+gagaga
+birth year is 1999
+***************************
+
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+struct record is ffbffb24
+account number is 2
+name is Holly Day2
+address is 1000 School St.
+Honolulu, HI 96823
+birth year is 1990
+***************************
+
+
+********DEBUG MODE********
+Called: 
+Menuui()
+Parameters passed:
+Start is ffbffc54
+***************************
+
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+a
+
+********DEBUG MODE********
+Function called: charcheck
+Parameters passed:
+void
+***************************
+
+ERROR: Try again.
+Enter integer values from 1 to 6
+
+0
+ERROR: Try again.
+Enter integer values from 1 to 6
+
+9
+ERROR: Try again.
+Enter integer values from 1 to 6
+
+1
+
+********DEBUG MODE********
+Function called: inputaccountnum
+Parameters passed:
+void
+***************************
+
+Enter account #
+aef26
+
+********DEBUG MODE********
+Function called: charcheck
+Parameters passed:
+void
+***************************
+
+ERROR:  Enter an integer value
+a
+
+********DEBUG MODE********
+Function called: charcheck
+Parameters passed:
+void
+***************************
+
+ERROR:  Enter an integer value
+2
+Enter the name on the account
+
+********DEBUG MODE********
+Function called: readbychar
+Parameters passed:
+name[] location is ffbffb4c
+cap is 25
+***************************
+
+this is name
+Enter address
+
+********DEBUG MODE********
+Function called: getfield
+Parameters passed:
+address[ ] location is ffbffb4c
+cap is 78
+
+***************************
+
+thii s is address
+with a couple
+extra lines
+
+
+********DEBUG MODE********
+Function called: inputbirth
+Parameters passed:
+void
+***************************
+
+Enter year of birth (eg. 1990)
+1800
+Error: Please enter a year between 1900 and 2016
+2020
+Error: Please enter a year between 1900 and 2016
+2000
+
+********DEBUG MODE********
+Called function addRecord
+Parameters passed:
+struct record is ffbffb4c
+account number is 2
+name is this is name
+address is this is address
+with a couple
+extra lines
+birth year is 2000
+***************************
+
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+2
+
+********DEBUG MODE********
+Function called: inputaccountnum
+Parameters passed:
+void
+***************************
+
+Enter account #
+2
+Modify Record
+Enter new name for the account
+
+********DEBUG MODE********
+Function called: readbychar
+Parameters passed:
+name[] location is ffbffb4c
+cap is 25
+***************************
+
+lam bert
+
+********DEBUG MODE********
+Function called: modifyRecord
+Parameters passed:
+record is 25450
+accountno is 2
+name is lam bert
+***************************
+
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+3
+
+********DEBUG MODE********
+Function called: inputaccountnum
+Parameters passed:
+void
+***************************
+
+Enter account #
+1
+
+********DEBUG MODE********
+Function called: printRecord
+Parameters passed:
+record is 25450
+accountno is 1
+***************************
+
+Printing records matching account number 1
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+4
+
+********DEBUG MODE********
+Function called: printAllRecords
+Parameters passed:
+record is 25450
+***************************
+
+Printing all records
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+2
+lam bert
+this is address
+with a couple
+extra lines
+2000
+2
+lam bert
+1000 School St.
+Honolulu, HI 96823
+1990
+2
+lam bert
+1000 School St.
+Honolulu, HI 96823
+1990
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+4
+aera
+aegaegega gagaeg
+aegaegaeg aa
+gagaga
+1999
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+4
+
+********DEBUG MODE********
+Function called: printAllRecords
+Parameters passed:
+record is 25450
+***************************
+
+Printing all records
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+2
+lam bert
+this is address
+with a couple
+extra lines
+2000
+2
+lam bert
+1000 School St.
+Honolulu, HI 96823
+1990
+2
+lam bert
+1000 School St.
+Honolulu, HI 96823
+1990
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+4
+aera
+aegaegega gagaeg
+aegaegaeg aa
+gagaga
+1999
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+5
+
+********DEBUG MODE********
+Function called: inputaccountnum
+Parameters passed:
+void
+***************************
+
+Enter account #
+2
+
+********DEBUG MODE********
+Function called: deletRecord
+Parameters passed:
+record is ffbffb4c
+accountno is 2
+***************************
+
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+4
+
+********DEBUG MODE********
+Function called: printAllRecords
+Parameters passed:
+record is 25450
+***************************
+
+Printing all records
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+4
+aera
+aegaegega gagaeg
+aegaegaeg aa
+gagaga
+1999
+
+********DEBUG MODE********
+Function called: menuoption
+Parameters passed:
+void
+***************************
+
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+6
+
+********DEBUG MODE********
+DEBUG: calling function writefile
+parameters passed
+struct record is ffbffc54
+filename is in sorted.txt
+***************************
+
+uhx01% ./out
+File does not exists to read
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+4
+Printing all records
+1
+Barb E. Dahl
+1415 Campus Rd.
+Honolulu, HI 96824
+USA
+1980
+2
+Holly Day2
+1000 School St.
+Honolulu, HI 96823
+1990
+2
+Holly Day
+1000 School St.
+Honolulu, HI 96823
+1990
+3
+Anita Knapp
+12 University Ave.
+Honolulu, HI 96824
+1975
+4
+aera
+aegaegega gagaeg
+aegaegaeg aa
+gagaga
+1999
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+5
+Enter account #
+1
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+5
+Enter account #
+2
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+5
+Enter account #
+3
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+5
+Enter account #
+4
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+4
+List contains no records
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+5
+Enter account #
+6
+List contains no records
+Record not in database 
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+3
+Enter account #
+4
+List contains no records
+Record to print is not contained in database
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+2
+Enter account #
+4
+Modify Record
+Enter new name for the account
+fakey
+List contains no records
+Account was not found
+No account was modified
+----------------------------
+========MENU OPTIONS========
+----------------------------
+Enter 1 to add new record  |
+Enter 2 to modify a record |
+Enter 3 to print a record  |
+Enter 4 to print all       |
+Enter 5 to delete record   |
+Enter 6 to Quit            |
+----------------------------
+6
+uhx01% exit
+uhx01% 
+script done on Sun Jul 10 20:51:08 2016

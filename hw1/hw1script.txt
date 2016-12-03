@@ -1,0 +1,7 @@
+Script started on Tue May 31 23:18:47 2016
+uhx01% cc -c hw1.c
+error: cpp: hw1.c No such file or directory
+cc: preprocessor failed for hw1.c
+uhx01% exit
+uhx01% 
+script done on Tue May 31 23:19:08 2016

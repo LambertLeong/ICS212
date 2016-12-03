@@ -1,0 +1,29 @@
+Script started on Tue Jun 14 20:53:27 2016
+uhx01% make
+gcc -c mainhw2.c
+gcc -c halfstring.c
+gcc -c length.c
+gcc mainhw2.o halfstring.o length.o -o out
+uhx01% ./out
+
+TEST 1 - string of even length
+Before halfstring function:
+test1string1 = even test1string2 = hi
+After halfstring function:
+test1string1 = even test1string2 = en
+
+TEST 2 - string of odd length
+Before halfstring function:
+test2string1 = odd test2string2 = goodbye
+After halfstring function:
+test2string1 = odd test2string2 = dd
+
+TEST 3 - half of nothing
+Before halfstring function:
+test3string1 =  test3string2 = same
+ERROR! String is empty! Nothing to add to second string argument
+After halfstring function:
+test3string1 =  test3string2 = same
+uhx01% exit
+uhx01% 
+script done on Tue Jun 14 20:53:34 2016

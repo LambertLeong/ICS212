@@ -1,0 +1,38 @@
+﻿Build started 7/20/2016 6:47:47 PM.
+     1>Project "H:\ICS212project1visualstudio\proj1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\proj1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\proj1.exe.embed.manifest.res" Debug\proj1_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\ICS212project1visualstudio\Debug\proj1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\proj1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\ICS212project1visualstudio\Debug\proj1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\ICS212project1visualstudio\Debug\proj1.lib" /MACHINE:X86 Debug\proj1.exe.embed.manifest.res
+         Debug\functions.obj
+         Debug\getfield.obj
+         Debug\iofunctions.obj
+         Debug\myinputfunctions.obj
+         Debug\project1main.obj
+         Debug\project1ui.obj
+         Debug\readbychar.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\proj1.exe.embed.manifest" /manifest Debug\proj1.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\proj1.exe.embed.manifest.res" Debug\proj1_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\ICS212project1visualstudio\Debug\proj1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\proj1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\ICS212project1visualstudio\Debug\proj1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\ICS212project1visualstudio\Debug\proj1.lib" /MACHINE:X86 Debug\proj1.exe.embed.manifest.res
+         Debug\functions.obj
+         Debug\getfield.obj
+         Debug\iofunctions.obj
+         Debug\myinputfunctions.obj
+         Debug\project1main.obj
+         Debug\project1ui.obj
+         Debug\readbychar.obj
+         proj1.vcxproj -> H:\ICS212project1visualstudio\Debug\proj1.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\proj1.unsuccessfulbuild".
+         Touching "Debug\proj1.lastbuildstate".
+     1>Done Building Project "H:\ICS212project1visualstudio\proj1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.29
